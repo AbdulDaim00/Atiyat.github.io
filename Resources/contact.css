@@ -1,0 +1,136 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+header{
+    width: 100%;
+    height: 100px;
+    background-color: #2d4a1a;
+    position: fixed;
+    z-index: 1;
+}
+.logo{
+    width: 30%;
+    float: left;
+    text-align: left;
+    line-height: 100px;
+    margin-left: 15px;
+}
+.logo a{
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Righteous', cursive;
+    color: white;
+    letter-spacing: 4px;
+}
+nav{
+    float: right;
+    line-height: 100px;
+    }
+nav a{
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 4px;
+    color: white;
+    padding: 36px 10px;
+    margin: 0px 1px;
+    font-weight: 700;
+}
+nav a:hover{
+    background-color: white;
+    color: #2d4a1a;
+    font-weight: 700;
+}
+body{
+    font-family:'Montserrat', sans-serif;
+    text-align: center;
+    background-color: #efefef;
+}
+.wrapper{
+    width: 90%;
+    overflow: auto;
+}
+#PM{
+    top: 100px;
+    background-color: #151c15;
+    font-size: 50px; 
+    color: aliceblue;
+    text-align: center;
+  }
+    
+.MembersContainer{
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    top: 150px;
+}
+.name1{
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    width: auto;
+    color: aliceblue;
+    text-shadow: 2px 1px black;
+    margin: 5px;
+    text-align: center;
+    background-color:#2d4a1a ;
+    justify-content: center;
+    display: table;
+}
+.name1 img {
+    float: right;
+    width:200px;
+    height:200px;
+    background: #555;
+  }
+  
+.name1 h2 {
+    position: relative;
+    vertical-align: middle;
+    display: table-cell;
+  }
+.name2{
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    width: auto;
+    color: aliceblue;
+    text-shadow: 2px 1px black;
+    margin: 15px;
+    text-align: center;
+    justify-content: center;
+    background-color:#2d4a1a;
+    display: table;
+}
+
+.name2 img {
+    float: right;
+    width:200px;
+    height:200px;
+    background: #555;
+  }
+  
+.name2 h2 {
+    position: relative;
+    vertical-align: middle;
+    display: table-cell;
+  }
+.AboutUs{
+    box-shadow: 5px 10px #888888; 
+    background-color: rgb(244, 255, 245); 
+    position:relative ; 
+    top: 250px;
+
+}
+.AboutUs h2{
+    text-align: center; 
+    background-color: #151c15;
+    color: aliceblue;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+

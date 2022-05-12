@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Atiyat Login Form</title>
+	<link rel="stylesheet" href="Resources/styles.css">
+</head>
+<body>    <div class="Box Area">
+	<header>
+		<div class="Wrapper">
+			<div class="logo">
+				<a href="#">Atiyat</a>
+			</div>
+			<nav>
+			</nav>
+		</div>
+	</header>
+	</div>
+	<div class="main-container">
+	<h1>Login</h1>
+	<p>Welcome Back! Enter your details to login</p>
+
+	<div id="error"></div>
+	<form id="form" action="homepage.html" method="GET">
+	  <div>
+		<label for="name">Name</label>
+		<input id="name" name="name" type="text" required>
+	  </div>
+	  <div>
+		<label for="password">Password</label>
+		<input id="password" name="password" type="password">
+	  </div>
+	  <button type="submit">Submit</button><br>
+	</form>
+</div>
+<script>
+	const name = document.getElementById('name')
+const password = document.getElementById('password')
+const form = document.getElementById('form')
+const errorElement = document.getElementById('error')
+
+form.addEventListener('submit', (e) => {
+  let messages = []
+  if (name.value === '' || name.value == null) {
+    messages.push('Name is required')
+  }
+
+  if (password.value.length <= 6) {
+    messages.push('Password must be longer than 6 characters')
+  }
+
+  if (password.value.length >= 20) {
+    messages.push('Password must be less than 20 characters')
+  }
+
+  if (password.value === 'password') {
+    messages.push('Password cannot be password')
+  }
+
+  if (messages.length > 0) {
+    e.preventDefault()
+    errorElement.innerText = messages.join(', ')
+  }
+})
+</script>
+</body>
+</html>
