@@ -1,199 +1,188 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Linking Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-    <!-- Linking Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+<!DOCTYPE HTML>
 
-    <link rel="stylesheet" href="Resources/feed.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<html>
+	<head>
+		<title>Atiyat</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="landing is-preload">
+		<div id="page-wrapper">
 
-    <title>Atiyat</title>
-</head>
-<body>
-    <div class="Box Area">
-        <header>
-            <div class="Wrapper">
-                <div class="logo">
-                    <a href="#">Atiyat</a>
-                </div>
-                <nav>
-                    <a href="homepage.html">Home</a>
-                    <a href="feed.html">Feed</a>
-                    <a href="contact.html">About Us</a>
-                    <a href="index.html">Log Out</a>
-                </nav>
-            </div>
-      </header>
-      <div class="main-container">
-      <div class="write-post">
-          <div class="user-profile">
-              <img src="Assets/Daim.jpg">
-              <p>Abdul Daim</p>
-          </div>
-          <div class="post-input-container">
-              <textarea rows="3" placeholder="Write a new post"></textarea>
-              <div class="add-post-link">
-                  <a href="#"><img src="Assets/gallery.png">Image
-                </a>
-                <a href="#"><img src="Assets/video.png">Video
-                </a>
-                <a href="#"><img src="Assets/attachFile.png">File
-                </a>
-                <button type="button" id="Enter">Enter</button> 
-              </div>
-          </div>
-      </div>
-    <div class="post-container">
-        <div class="post-row">
-            <div class="user-profile">
-                <img src="Assets/man.png">
-                <div>
-                    <p>John Oliver</p>
-                    <span>June 24 2021, 13:40</span>
-                </div>
-            </div>
-            <div class="dropdown">
-                <a href="#"><i class="fa fa-ellipsis-v"></i></a>
-                <div class="dropdown-content">
-                  <a href="#">Report</a>
-                  <a href="#">Hide this post</a>
-                  <a href="#">Copy Link</a>
-                </div>
-              </div>
-            
-        </div>
-    <p class="post-text">At a young age Ria was diagnosed with cancer.We are asking for a contribution to assist Ria and her sons for what lies ahead. Since the cancer is very aggressive Ria is extremely debilitated by it. She is at a point now where even walking from one room to another is a difficult task, and unfortunately, she is deteriorating quickly. Because Ria is unable to work and requires continuous assistance with day-to-day activities, we are setting a goal of $50,000. Please consider contributing to this family during this difficult time.Medical report is attached below</p>
-    <img src="Assets\medReport1.jpg" class="post-img">
-    <div class="post-row">
-        <div class="activity-icons">
-        <div>
-        <span class="heading">Trust Factor:</span>
-<span class="fa fa-star checked"></span>
-<span class="fa fa-star checked"></span>
-<span class="fa fa-star checked"></span>
-<span class="fa fa-star checked"></span>
-<span class="fa fa-star"></span>
-            </div>
-        <div><img src="Assets/comments.png"> 12</div>
-        <div><img src="Assets/share.png">10</div>
-        <button type="button" id="Donate">Donate</button> 
-
-        </div>
-        <div class="post-profile-icon">
-
-        </div>
-    </div>
-    <h2>Comments</h2>
-    <div class="post-comments">
-            <p>Abdul Daim Rizwan</p><br />
-            <p id="date"></p><br />
-            <textarea rows="1" cols="10" id="comment-text" placeholder="Enter your comment"></textarea>
-            <input type="button" value="Submit" id="SubmitButton">
-        </div>
-        <div class="comment-container">
-            <div class="user-profile">
-                <img src="Assets/Daim.jpg">
-                <div>
-                    <p>Abdul Daim</p>
-                    <span>June 24 2021, 13:40</span>
-                    <div><p>Just Donated! Hoping for quick recovery</p></div>
-                    
-                </div>
-            </div>
-    </div>
-       
-
-
-        </div>
-        <div class="post-container">
-            <div class="post-row">
-                <div class="user-profile">
-                    <img src="Assets/woman.jpg">
-                    <div>
-                        <p>Sarah Tyler</p>
-                        <span>June 23 2020, 18:40</span>
-                    </div>
-                </div>
-                <div class="dropdown">
-                    <a href="#"><i class="fa fa-ellipsis-v"></i></a>
-                    <div class="dropdown-content">
-                      <a href="#">Report</a>
-                      <a href="#">Hide this post</a>
-                      <a href="#">Copy Link</a>
-                    </div>
-                  </div>
-                
-            </div>
-        <p class="post-text">Jenika was just diagnosed with Acute Myeloid Leukemia. She is a senior at Salinas High, graduating with a 4.0 in just a few short weeks. Last week, Jenika received MVP in the inaugural Central Coast AllStar basketball game, qualified for CCS trials in track, and had her college signing for The College of Idaho; where she received a full-ride scholarship to play basketball. Jenika is a friend to everyone and is loved by all! She was voted for prom queen, but unfortunately, it was her first night staying at the hospital. Jenika will also be missing out on all the end-of-the-year senior activities and walking in her graduation. She will have to defer college for this upcoming year.
-
-            Jenika now faces a long road of treatment at Lucille Packard Children's Hospital at Stanford. She will have to remain in the hospital throughout her months-long battle.
-            
-            This unexpected challenge will be a substantial financial burden to her family, as her parents, Jennifer and Jason, will need to be with her throughout her treatment.</p>
-        <img src="Assets/heartMed.jpeg" class="post-img">
-        <div class="post-row">
-            <div class="activity-icons">
-            <div>
-            <span class="heading">Trust Factor:</span>
-    <span class="fa fa-star checked"></span>
-    <span class="fa fa-star checked"></span>
-    <span class="fa fa-star checked"></span>
-    <span class="fa fa-star checked"></span>
-    <span class="fa fa-star"></span>
-                </div>
-            <div><img src="Assets/comments.png"> 12</div>
-            <div><img src="Assets/share.png">10</div>
-            <button type="button" id="Donate">Donate</button> 
-    
-            </div>
-            <div class="post-profile-icon">
-    
-            </div>
-        </div>
-        <h2>Comments</h2>
-        <div class="post-comments">
-                <p>Abdul Daim Rizwan</p><br />
-                <p id="date"></p><br />
-                <textarea rows="1" cols="10" id="comment-text" placeholder="Enter your comment"></textarea>
-                <input type="button" value="Submit" id="SubmitButton">
-            </div>
-            <div class="comment-container">
-                <div class="user-profile">
-                    <img src="Assets/man.png">
-                    <div>
-                        <p>Farouk</p>
-                        <span>Spetmeber 2 2022, 13:40</span>
-                        <div><p>So sorry to hear, will share this with my friends</p></div>
-                        
-                    </div>
-                </div>
-        </div>
-           
-    
-    
-            </div>
-            <button>Load More!</button>
-    </div>
-    </div>
-<script>
-    function render(data){
-
-    }   
-     $(document).ready(function(){
-     var date = new Date();
-    var n = date.toDateString();
-    document.getElementById("date").innerHTML = n;
-})
- 
-</script>
-</body>
-</html>
+			<!-- Header -->
+				<header id="header" >
+					<h1><a href="index.html">Atiyat</a></h1>
+					<nav id="nav">
+						<ul>
+							<li><a href="index.html">Home</a></li>	
+							<li><a href="feed.html">Feed</a></li>
+							<li><a href="contact.html">Contact</a></li>
+							<li><a href="about.html">About</a></li>
+							<li><a href="#" class="button">Sign Up</a></li>
+						</ul>
+					</nav>
+				</header>
+				<div class="main-container">
+					<div class="write-post">
+						<div class="user-profile">
+							<img src="Assets/Daim.jpg">
+							<p>Abdul Daim</p>
+						</div>
+						<div class="post-input-container">
+							<textarea rows="3" placeholder="Write a new post"></textarea>
+							<div class="add-post-link">
+								<a href="#"><img src="Assets/gallery.png">Image
+							  </a>
+							  <a href="#"><img src="Assets/video.png">Video
+							  </a>
+							  <a href="#"><img src="Assets/attachFile.png">File
+							  </a>
+							  <button type="button" id="Enter">Enter</button> 
+							</div>
+						</div>
+					</div>
+				  <div class="post-container">
+					  <div class="post-row">
+						  <div class="user-profile">
+							  <img src="Assets/man.png">
+							  <div>
+								  <p>John Oliver</p>
+								  <span>June 24 2021, 13:40</span>
+							  </div>
+						  </div>
+						  <div class="dropdown">
+							  <a href="#"><i class="fa fa-ellipsis-v"></i></a>
+							  <div class="dropdown-content">
+								<a href="#">Report</a>
+								<a href="#">Hide this post</a>
+								<a href="#">Copy Link</a>
+							  </div>
+							</div>
+						  
+					  </div>
+				  <p class="post-text">At a young age Ria was diagnosed with cancer.We are asking for a contribution to assist Ria and her sons for what lies ahead. Since the cancer is very aggressive Ria is extremely debilitated by it. She is at a point now where even walking from one room to another is a difficult task, and unfortunately, she is deteriorating quickly. Because Ria is unable to work and requires continuous assistance with day-to-day activities, we are setting a goal of $50,000. Please consider contributing to this family during this difficult time.Medical report is attached below</p>
+				  <img src="Assets\medReport1.jpg" class="post-img">
+				  <div class="post-row">
+					  <div class="activity-icons">
+					  <div>
+					  <span class="heading">Trust Factor:</span>
+			  <span class="fa fa-star checked"></span>
+			  <span class="fa fa-star checked"></span>
+			  <span class="fa fa-star checked"></span>
+			  <span class="fa fa-star checked"></span>
+			  <span class="fa fa-star"></span>
+						  </div>
+					  <div><img src="Assets/comments.png"> 12</div>
+					  <div><img src="Assets/share.png">10</div>
+					  <button type="button" id="Donate">Donate</button> 
+			  
+					  </div>
+					  <div class="post-profile-icon">
+			  
+					  </div>
+				  </div>
+				  <h2>Comments</h2>
+				  <div class="post-comments">
+						  <p>Abdul Daim Rizwan</p><br />
+						  <p id="date"></p><br />
+						  <textarea rows="1" cols="10" id="comment-text" placeholder="Enter your comment"></textarea>
+						  <input type="button" value="Submit" id="SubmitButton">
+					  </div>
+					  <div class="comment-container">
+						  <div class="user-profile">
+							  <img src="Assets/Daim.jpg">
+							  <div>
+								  <p>Abdul Daim</p>
+								  <span>June 24 2021, 13:40</span>
+								  <div><p>Just Donated! Hoping for quick recovery</p></div>
+								  
+							  </div>
+						  </div>
+				  </div>
+					 
+			  
+			  
+					  </div>
+					  <div class="post-container">
+						  <div class="post-row">
+							  <div class="user-profile">
+								  <img src="Assets/woman.jpg">
+								  <div>
+									  <p>Sarah Tyler</p>
+									  <span>June 23 2020, 18:40</span>
+								  </div>
+							  </div>
+							  <div class="dropdown">
+								  <a href="#"><i class="fa fa-ellipsis-v"></i></a>
+								  <div class="dropdown-content">
+									<a href="#">Report</a>
+									<a href="#">Hide this post</a>
+									<a href="#">Copy Link</a>
+								  </div>
+								</div>
+							  
+						  </div>
+					  <p class="post-text">Jenika was just diagnosed with Acute Myeloid Leukemia. She is a senior at Salinas High, graduating with a 4.0 in just a few short weeks. Last week, Jenika received MVP in the inaugural Central Coast AllStar basketball game, qualified for CCS trials in track, and had her college signing for The College of Idaho; where she received a full-ride scholarship to play basketball. Jenika is a friend to everyone and is loved by all! She was voted for prom queen, but unfortunately, it was her first night staying at the hospital. Jenika will also be missing out on all the end-of-the-year senior activities and walking in her graduation. She will have to defer college for this upcoming year.
+			  
+						  Jenika now faces a long road of treatment at Lucille Packard Children's Hospital at Stanford. She will have to remain in the hospital throughout her months-long battle.
+						  
+						  This unexpected challenge will be a substantial financial burden to her family, as her parents, Jennifer and Jason, will need to be with her throughout her treatment.</p>
+					  <img src="Assets/heartMed.jpeg" class="post-img">
+					  <div class="post-row">
+						  <div class="activity-icons">
+						  <div>
+						  <span class="heading">Trust Factor:</span>
+				  <span class="fa fa-star checked"></span>
+				  <span class="fa fa-star checked"></span>
+				  <span class="fa fa-star checked"></span>
+				  <span class="fa fa-star checked"></span>
+				  <span class="fa fa-star"></span>
+							  </div>
+						  <div><img src="Assets/comments.png"> 12</div>
+						  <div><img src="Assets/share.png">10</div>
+						  <button type="button" id="Donate">Donate</button> 
+				  
+						  </div>
+						  <div class="post-profile-icon">
+				  
+						  </div>
+					  </div>
+					  <h2>Comments</h2>
+					  <div class="post-comments">
+							  <p>Abdul Daim Rizwan</p><br />
+							  <p id="date"></p><br />
+							  <textarea rows="1" cols="10" id="comment-text" placeholder="Enter your comment"></textarea>
+							  <input type="button" value="Submit" id="SubmitButton">
+						  </div>
+						  <div class="comment-container">
+							  <div class="user-profile">
+								  <img src="Assets/man.png">
+								  <div>
+									  <p>Farouk</p>
+									  <span>Spetmeber 2 2022, 13:40</span>
+									  <div><p>So sorry to hear, will share this with my friends</p></div>
+									  
+								  </div>
+							  </div>
+					  </div>
+						 
+				  
+				  
+						  </div>
+						  <button>Load More!</button>
+				  </div>
+				  </div>
+			  <script>
+				  function render(data){
+			  
+				  }   
+				   $(document).ready(function(){
+				   var date = new Date();
+				  var n = date.toDateString();
+				  document.getElementById("date").innerHTML = n;
+			  })
+			   
+			  </script>
+			  </body>
+			  </html>

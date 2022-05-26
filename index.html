@@ -1,67 +1,167 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Atiyat Login Form</title>
-	<link rel="stylesheet" href="Resources/styles.css">
-</head>
-<body>    <div class="Box Area">
-	<header>
-		<div class="Wrapper">
-			<div class="logo">
-				<a href="#">Atiyat</a>
-			</div>
-			<nav>
-			</nav>
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Atiyat</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="landing is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header" class="alt">
+					<h1><a href="index.html">Atiyat</a></h1>
+					<nav id="nav">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							
+							<li><a href="feed.html">Feed</a></li>
+							<li><a href="contact.html">Contact</a></li>
+							<li><a href="about.html">About</a></li>
+							
+							<li><a href="signUp.html"  id="signout">Sign Out</a></li>
+						</ul>
+					</nav>
+				</header>
+
+			<!-- Banner -->
+				<section id="banner">
+					<h2>Atiyat</h2>
+					
+					<ul class="actions special">
+						<li><a href="signUp.html" class="button primary">Sign Up</a></li>
+						<li><a href="about.html" class="button">Learn More</a></li>
+					</ul>
+				</section>
+
+			<!-- Main -->
+				<section id="main" class="container">
+
+					<section class="box special">
+						<header class="major">
+							<h2>Take part in the beautiful act of selfgiving to trustable charites
+							<br />
+							of selfgiving to trustable charites</h2>
+						</header>
+						<span class="image featured"><img src="images/Stock.jpg" alt="" /></span>
+					</section>
+
+					<section class="box special features">
+						
+							
+
+					<div class="row">
+						<div class="col-6 col-12-narrower">
+
+							<section class="box special">
+								
+								<h3>Donate to your desireable charities</h3>
+								<p>Our crowdfunding platforms provides a list of charitable organizations and different kinds of welfare services you can donate to with our trust</p>
+								<ul class="actions special">
+									<li><a href="feed.html" class="button alt">Learn More</a></li>
+								</ul>
+							</section>
+
+						</div>
+						<div class="col-6 col-12-narrower">
+
+							<section class="box special">
+								
+								<h3>Start a fundraiser<br> as individual</h3>
+								<p>Our crownfunding platform allows<br> individuals to seemingly start a fundraiser for their relative issue.<br></p>
+								<ul class="actions special">
+									<li><a href="feed.html" class="button alt">Learn More</a></li>
+								</ul>
+							</section>
+						</div>
+					<div>
+
+							<section class="box special">
+								
+								<h3>Donate to Individuals</h3>
+								<p>Our crownfunding platform provides a list of fundraisers started by individuals as per their desires and will make the donation process very seamless and secure.</p>
+								<ul class="actions special">
+									<li><a href="feed.html" class="button alt">Learn More</a></li>
+								</ul>
+							</section>
+
+						</div>
+
+				</section>
+
+			<!-- CTA -->
+				<section id="cta">
+
+					<h2>Sign up to donate</h2>
+					<form>
+						<div class="row gtr-50 gtr-uniform">
+							<div class="col-8 col-12-mobilep">
+								<input type="email" name="email" id="email" placeholder="Email Address" />
+							</div>
+							<div class="col-4 col-12-mobilep">
+								<input type="submit" value="Sign Up" class="fit" />
+							</div>
+						</div>
+					</form>
+
+				</section>
+
+			<!-- Footer -->
+				<footer id="footer">
+					<ul class="copyright">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">4002---4030</a></li>
+					</ul>
+				</footer>
+
 		</div>
-	</header>
-	</div>
-	<div class="main-container">
-	<h1>Login</h1>
-	<p>Welcome Back! Enter your details to login</p>
 
-	<div id="error"></div>
-	<form id="form" action="homepage.html" method="GET">
-	  <div>
-		<label for="name">Name</label>
-		<input id="name" name="name" type="text" required>
-	  </div>
-	  <div>
-		<label for="password">Password</label>
-		<input id="password" name="password" type="password">
-	  </div>
-	  <button type="submit">Submit</button><br>
-	</form>
-</div>
-<script>
-	const name = document.getElementById('name')
-const password = document.getElementById('password')
-const form = document.getElementById('form')
-const errorElement = document.getElementById('error')
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-auth.js"></script>
 
-form.addEventListener('submit', (e) => {
-  let messages = []
-  if (name.value === '' || name.value == null) {
-    messages.push('Name is required')
-  }
+			<script>
+			  // Your web app's Firebase configuration
+			  const firebaseConfig = {
+			apiKey: "AIzaSyDyrp0YDcZYvdtGBrXyBgLD8y_AZsQNj5k",
+			authDomain: "atiyat-dcd37.firebaseapp.com",
+			projectId: "atiyat-dcd37",
+			storageBucket: "atiyat-dcd37.appspot.com",
+			messagingSenderId: "198309718269",
+			appId: "1:198309718269:web:f55020bca85c9cc22ab694"
+		  };
+			  // Initialize Firebase
+			  firebase.initializeApp(firebaseConfig);
+			</script>
+		
+			<script>
+			  //invokes firebase authentication.
+			  const auth = firebase.auth();
 
-  if (password.value.length <= 6) {
-    messages.push('Password must be longer than 6 characters')
-  }
+		
+				  document.querySelector("#signout").addEventListener("click", () => {
+	            signOut();
+                  });
+const signOut = () => {
+	firebase
+	  .auth()
+	  .signOut()
+	  .then(function () {
+		location.reload();
+	  })
+	  .catch(function (error) {
+		alert("error signing out, check network connection");
+	  });
+  };
 
-  if (password.value.length >= 20) {
-    messages.push('Password must be less than 20 characters')
-  }
+			  </script>
 
-  if (password.value === 'password') {
-    messages.push('Password cannot be password')
-  }
-
-  if (messages.length > 0) {
-    e.preventDefault()
-    errorElement.innerText = messages.join(', ')
-  }
-})
-</script>
-</body>
+	</body>
 </html>
