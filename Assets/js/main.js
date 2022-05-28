@@ -3,6 +3,22 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
+import { initializeApp } from "firebase/app";
+import { getDatabase, ref, set } from "firebase/database";
+
+
+const firebaseConfig = {
+    apiKey: "AIzaSyDyrp0YDcZYvdtGBrXyBgLD8y_AZsQNj5k",
+    authDomain: "atiyat-dcd37.firebaseapp.com",
+    projectId: "atiyat-dcd37",
+    storageBucket: "atiyat-dcd37.appspot.com",
+    messagingSenderId: "198309718269",
+    appId: "1:198309718269:web:f55020bca85c9cc22ab694"
+  };
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig)
+
+	  const database = getDatabase(app);
 
 
 (function($) {
@@ -111,3 +127,48 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+
+
+// Listen for form submit
+document.getElementById('contact-form').addEventListener("submit", submitForm());
+
+// Submit form
+function submitForm(e){
+  e.preventDefault();
+
+  // Get values
+  var name = getInputVal("name");
+  var email = getInputVal('email');
+  var subject = getInputVal('subject');
+  var message = getInputVal('message');
+
+  // Save message
+  writeUserData(name,email,subject, message);
+
+  // Show alert
+  document.querySelector(".alert").style.display = 'block';
+
+  // Hide alert after 3 seconds
+  setTimeout(function(){
+    document.querySelector(".alert").style.display = 'none';
+  },3000);
+
+  // Clear form
+  document.getElementById('contact-form').reset();
+}
+
+// Function to get get form values
+function getInputVal(id){
+  return document.getElementById(id).value;
+}
+
+// Save message to firebase
+function writeUserData(name,email,subject, message) {
+	const db = getDatabase();
+	set(ref(db, 'users/' + name), {
+	  name: name,
+	  email: email,
+	  subject:subject,
+	  message : message
+	});
+  }
